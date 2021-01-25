@@ -1,3 +1,4 @@
+
 from flask import Flask, Response, render_template, send_file
 from utils.streamer import StreamClient
 import argparse
@@ -26,9 +27,9 @@ if __name__ == "__main__":
         help="server zmq port, used for receiving heatmap data")
     ap.add_argument("-c", "--client", default="x86",
         help="['jetson', 'x86'], if running on jetson nvvideodecoder can be used to decode rtsp feed")
-    ap.add_argument("-p", "--port", default=3000,
+    ap.add_argument("-p", "--port", default=5000,
         help="port address to run client application")
     args = ap.parse_args()
 
     stream_client = StreamClient(host=args.server, rtsp_port=args.rtsp_port, zmq_port=args.zmq_port, client=args.client)
-    app.run(debug=True, host="0.0.0.0", port=000)
+    app.run(debug=True, host="0.0.0.0", port=5000)

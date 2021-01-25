@@ -32,3 +32,9 @@ Esta aplicación se encuentra dentro de un contenedor Docker y utiliza Deepstrea
     sudo docker exec -it mask_detection-ds-container bash run_ui.sh
     ````
     Esta aplicación mostrara en el puerto 5000 una vista para ver los resultados del video.
+
+##Referncias
+
+- [Nvidia Deepstream SDK](https://developer.nvidia.com/Deepstream-sdk)
+- [deepstream-imagedata-multistream](https://github.com/NVIDIA-AI-IOT/deepstream_python_apps/tree/master/apps/deepstream-imagedata-multistream)
+- [Jetson Deepstream Heatmap App](https://github.com/imneonizer/maskout)
